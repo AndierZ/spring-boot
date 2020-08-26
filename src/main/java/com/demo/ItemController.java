@@ -30,11 +30,6 @@ public class ItemController {
         this.assembler = assembler;
     }
 
-    @RequestMapping("/")
-    public String index() {
-        return "Greetings from Spring Boot!";
-    }
-
     @GetMapping("/items")
     public CollectionModel<EntityModel<Item>> all() {
 
